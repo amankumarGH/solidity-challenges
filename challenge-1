@@ -1,0 +1,49 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.26;
+
+contract Challenge1 {
+
+  uint public _number;
+  bool public _address;
+  string public _name;
+  address payable public _token;
+
+  function setNumber(uint _number) public returns(uint) {
+    _number = _number;
+    return _number;
+  }
+
+  function getNumber() public view returns(uint) {
+    return _number;
+  }
+
+  function setAddress(bool _address) public returns(bool) {
+    _address = _address;
+    return _address;
+  }
+
+  function getAddress() public view returns(bool) {
+    return _address;
+  }
+
+  function setName(string memory _name) public returns(string memory) {
+    _name = _name;
+    return _name;
+  }
+
+  function getName() public view returns(string memory) {
+    return _name;
+  }
+
+  function setToken(address payable _token) public returns(address payable) {
+    _token = _token;
+    return _token;
+  }
+
+  function getToken() public view returns(address payable) {
+    return _token;
+  }
+}
+
+// Author : AMAN KUMAR
+//Email:amankumaredi@gmail.com
