@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract operations{
+    function addtion(uint256 x, uint256 y) public pure returns (uint256) {
+        return x + y;
+    }
+
+    function substraction(uint256 x, uint256 y) public pure returns (uint256) {
+        return x - y;
+    }
+
+    function multiplication(uint256 x, uint256 y) public pure returns (uint256) {
+        return x*y;
+    }
+
+    function division(uint256 x, uint256 y) public pure returns(uint256){
+        return x/y;
+    }
+}
+
+//Author:AMAN KUMAR
+//Email:amankumaredi@gmail.com
