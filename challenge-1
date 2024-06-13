@@ -3,45 +3,45 @@ pragma solidity 0.8.26;
 
 contract Challenge1 {
 
-  uint public _number;
-  bool public _address;
-  string public _name;
-  address payable public _token;
+  uint public uid;
+  bool public abbv;
+  string public name;
+  address payable public token;
 
-  function setNumber(uint _number) public returns(uint) {
-    _number = _number;
-    return _number;
+function setNumber(uint _number) public returns(uint) {
+    uid = _number;
+    return uid;
   }
 
   function getNumber() public view returns(uint) {
-    return _number;
+    return uid;
   }
 
-  function setAddress(bool _address) public returns(bool) {
-    _address = _address;
-    return _address;
+  function setAbbv(bool _address) public returns(bool) {
+    abbv = _address;
+    return abbv;
   }
 
   function getAddress() public view returns(bool) {
-    return _address;
+    return abbv;
   }
 
   function setName(string memory _name) public returns(string memory) {
-    _name = _name;
-    return _name;
+    name = _name;
+    return name;
   }
 
   function getName() public view returns(string memory) {
-    return _name;
+    return name;
   }
 
-  function setToken(address payable _token) public returns(address payable) {
-    _token = _token;
-    return _token;
+function setToken(address payable _token) public returns(address payable) {
+    token = _token;
+    return token;
   }
 
   function getToken() public view returns(address payable) {
-    return _token;
+    return token;
   }
 }
 
