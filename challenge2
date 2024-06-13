@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract calculator {
+    uint public Wei;
+    uint public Ether;
+    uint public Gwei;
+
+    event value_Received(uint Wei, uint Ether, uint Gwei);
+
+    receive() external payable {
+        Wei = msg.value;
+        Ether = msg.value / 1 ether;
+        Gwei = msg.value / 1 gwei;
+
+        emit value_Received(Wei, Ether, Gwei);
+    }
+
+    function getValues() public view returns (uint, uint, uint) {
+        return (Wei, Ether, Gwei);
+    }
+    
+}
+    //Author:AMAN KUMAR
+    //Emial:amankumaredi@gmail.com
